@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains code to accurately determine the positions of solar flares. While the Heliophysics Event Knowledgebase (HEK) provides flare position data, the helioprojective Cartesian (HPC) coordinates in HEK are often inaccurate. This project aims to correct these positions using data from the Atmospheric Imaging Assembly (AIA).
+This repository contains code to accurately determine the positions of solar flares. While the Heliophysics Event Knowledgebase (HEK) provides flare position data, the helioprojective Cartesian (HPC) coordinates in HEK are often missing or inaccurate. This project aims to correct these positions using data from the Atmospheric Imaging Assembly (AIA).
 
 ## Features
 
