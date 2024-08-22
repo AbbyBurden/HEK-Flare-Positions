@@ -1,4 +1,4 @@
-# HEK-Flare-Positions
+# HEK Flare Positions using AIA
 
 ## Overview
 
