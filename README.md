@@ -16,7 +16,6 @@ This repository provides accurate solar flare position data, correcting and supp
 The dataframe includes:
 - HEK-defined start and peak times of flares
 - Corrected HPC coordinates ('hpc_x' and 'hpc_y')
-- [Any other relevant columns - please specify]
 
 ## Methodology
 
