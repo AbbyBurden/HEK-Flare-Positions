@@ -26,9 +26,13 @@ Our approach to generating accurate flare positions:
 4. Identify the brightest pixel as the flare location
 5. Calculate and record the corrected HPC coordinates
 
+## Potential Problems
+
+- If 2 flares happen at the same time, this will not catch it
+
 ## Usage
 
-Researchers can directly use the pre-generated dataframe for their studies. The dataframe is available.
+Researchers can directly use the pre-generated dataframe for their studies. The dataframe is available as hek_flares.csv.
 
 For those interested in the underlying process:
 1. The code used to generate this dataframe is included in this repository.
