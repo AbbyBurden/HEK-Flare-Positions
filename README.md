@@ -2,38 +2,55 @@
 
 ## Overview
 
-This repository contains code to accurately determine the positions of solar flares. While the Heliophysics Event Knowledgebase (HEK) provides flare position data, the helioprojective Cartesian (HPC) coordinates in HEK are often missing or inaccurate. This project aims to correct these positions using data from the Atmospheric Imaging Assembly (AIA).
+This repository provides accurate solar flare position data, correcting and supplementing the information available in the Heliophysics Event Knowledgebase (HEK). While HEK offers flare position data, its helioprojective Cartesian (HPC) coordinates are often missing or inaccurate. Our project addresses this issue using data from the Atmospheric Imaging Assembly (AIA).
 
-## Features
+## Key Features
 
-- Corrects inaccurate HPC coordinates from HEK
-- Uses AIA 94 Å difference images to locate flares
-- Implements a method similar to SolarMonitor for flare detection
-- Provides accurate flare locations for nearly every detected flare
+- **Pre-generated Dataframe**: The main product of this project is a comprehensive dataframe containing accurate flare positions.
+- Corrected HPC coordinates for flares listed in HEK
+- Flare locations determined using AIA 94 Å difference images
+- Methodology similar to SolarMonitor for consistent flare detection
 
-## How It Works
+## Dataframe Contents
 
-1. The code reads a dataframe containing HEK-defined start and peak times of flares.
-2. It then finds the correct HPC values using the following method:
-   - Generates difference images from AIA 94 Å data
-   - Applies Gaussian blurring to these images
-   - Identifies the brightest pixel, which corresponds to the flare location
-3. The corrected HPC coordinates are added to the input dataframe
+The dataframe includes:
+- HEK-defined start and peak times of flares
+- Corrected HPC coordinates ('hpc_x' and 'hpc_y')
+- [Any other relevant columns - please specify]
+
+## Methodology
+
+Our approach to generating accurate flare positions:
+1. Start with HEK-defined flare times
+2. Generate difference images from AIA 94 Å data
+3. Apply Gaussian blurring to these images
+4. Identify the brightest pixel as the flare location
+5. Calculate and record the corrected HPC coordinates
 
 ## Usage
 
-1. Prepare a dataframe with HEK-defined start and peak times of the flares you're interested in.
-2. Ensure the dataframe has empty columns for 'hpc_x' and 'hpc_y'.
-3. Run the code to populate these columns with the corrected HPC values.
+Researchers can directly use the pre-generated dataframe for their studies. The dataframe is available.
 
-## Note on HPC Coordinate Generation
-
-The exact method used by HEK to generate the original HPC coordinates is uncertain. This repository's approach provides a more accurate alternative by directly analyzing AIA imagery.
+For those interested in the underlying process:
+1. The code used to generate this dataframe is included in this repository.
+2. It can be run on a dataframe with HEK-defined start and peak times to populate 'hpc_x' and 'hpc_y' columns.
 
 ## Data Coverage
 
-The current version of this project includes data up to 2022.
+The current version of this dataset includes flare positions up to 2022.
+
+## Note on HPC Coordinate Generation
+
+The exact method used by HEK to generate the original HPC coordinates is uncertain. Our approach provides a more accurate alternative by directly analyzing AIA imagery.
 
 ## Project Origin
 
 This work is one of the results from the ESA-Leiden University LEAPS project, supervised by Dr. Andy To.
+
+## Citation
+
+If you use this data in your research, please cite this repository
+
+## Contact
+
+For queries regarding this dataset or methodology, please contact andysh.to@esa.int.
