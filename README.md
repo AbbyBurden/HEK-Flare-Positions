@@ -44,7 +44,7 @@ The exact method used by HEK to generate the original HPC coordinates is uncerta
 
 ## Project Origin
 
-This work is one of the results from the ESA-Leiden University LEAPS project, supervised by Dr. Andy To.
+This work is one of the results from the 2024 ESA-Leiden University LEAPS project, supervised by Dr. Andy To.
 
 ## Citation
 
