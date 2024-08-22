@@ -21,7 +21,7 @@ The dataframe includes:
 
 Our approach to generating accurate flare positions:
 1. Start with HEK-defined flare times
-2. Generate difference images from AIA 94 Å data
+2. Generate difference images between flare peak and start from AIA 94 Å data
 3. Apply Gaussian blurring to these images
 4. Identify the brightest pixel as the flare location
 5. Calculate and record the corrected HPC coordinates
