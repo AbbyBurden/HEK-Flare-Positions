@@ -40,7 +40,7 @@ For those interested in the underlying process:
 
 ## Data Coverage
 
-The current version of this dataset includes flare positions up to 2022 August.
+The current version of this dataset includes flare positions up to 2024 July.
 
 ## Note on HPC Coordinate Generation
 
